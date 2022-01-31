@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
+*
+{
+    font-family: 'Comforter', cursive;
+}
+body
+{
+  margin: 0;
+  padding: 0;
+  background: url(flower\ images\ download\ \(1\).jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: fixed;
+  overflow-x: hidden;
+}
+
+.card
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 310px;
+  height: 500px;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+}
+
+.card img
+{
+  width: 85%;
+  border-radius: 300px;
+  animation: mymove 5s linear infinite;
+  transition: 0.4s all;
+  margin-top: -20px;
+}
+
+.card img:hover
+{
+  filter:contrast(200%);
+}
+
+@keyframes mymove
+{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+h2
+{
+  font-size: 40px;
+   background: -webkit-linear-gradient(45deg, blue, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+audio
+{
+  width: 90%;
+  margin-top: 12px;
+  border: 5px solid #000;
+  border-radius: 50px;
+  outline: none;
+}
+
+.cr
+{
+  font-size: 15px;
+  color: #fff;
+}
+
+hr
+{
+  width: 95%;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 350px) {
+  .card {
+    width: 95%;
+  }
+}
